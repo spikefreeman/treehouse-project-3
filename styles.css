@@ -1,3 +1,68 @@
 *{
-    font-family: 'Merriweather';
+    margin: 0;
+}
+
+body{
+    font-family: "Merriweather", sans-serif;
+}
+
+
+input[placeholder]{
+    text-align: end;
+}
+
+input, select{
+    background: #eff0f1;
+    border: none;
+    border-radius: 5px;
+}
+
+h1{
+    margin:0%;
+    padding: 0;
+    background-color: #2d3945;
+    color: #ffffff;    
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#contact{
+    padding: 15px;
+}
+
+#name, #email, #tel, #address, #city, #state, #zip, select, #submit, #textarea{
+    width: 100%;
+    padding: 15px 0 15px 0;
+}
+
+header {
+    border-bottom: solid;
+}
+
+#contact {
+    border-top: solid;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#newsletter {
+    border-top: solid;
+    padding: 15px;
+}
+
+#newletter > label{
+    padding: 10px;
 }
