@@ -92,10 +92,11 @@ input[type=submit]{
 /* desktop view */
 
 @media (min-width: 768px) {
-    body{
-        display: flex;
-        flex-wrap: flex;
-        align-content: center;
-        flex-direction: column;
+    header, content, footer{
+        display: block;
+        max-width: 768px;
+        margin: auto;
     }
+
+
 }
