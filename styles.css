@@ -8,7 +8,7 @@ body{
 }
 
 
-input[placeholder]{
+input::placeholder{
     text-align: end;
 }
 
@@ -40,47 +40,28 @@ p {
     color: gray;
 }
 
-
-form{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#contact{
-    padding: 15px 0;
-}
-
-#name, #email, #tel, #address, #city, #state, select, #signup, #textarea{
+input, select, textarea{
     width: 100%;
-    padding: 15px 5px 15px 5px;
+    padding: 15px 0;
+    margin: 10px 0;
+}
+
+input[type="checkbox"], input[type="radio"]{
+    width: auto;
 }
 
 #zip{
-    width: 50%;
+    width: 25%;
     padding: 15px 5px 15px 5px;
 }
 
 header {
-    border-bottom: solid;
+    border-bottom: 5px solid;
 }
 
-#contact {
-    border-top: solid;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-#newsletter {
-    border-top: solid;
-    padding: 15px 0;
-}
-
-#newletter > label{
-    margin: 20px 0 5px 0;
-}
-
-#textarea {
+textarea {
     margin: 10px 0 20px 0;
+
 }
 
 input[type=submit]{
@@ -89,13 +70,60 @@ input[type=submit]{
     font-size: larger;
 }
 
+form{
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+legend{
+    font-size: larger;
+    font-weight: bold;
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+
+}
+
+fieldset{
+    border: none;
+    border-top: 2px solid black;
+    padding: 0;
+    margin-top: 2px;
+}
+
+input:focus,textarea:focus{
+    outline: 2px solid #2d3945;
+
+}
+
+
+
 /* desktop view */
 
 @media (min-width: 768px) {
-    header, content, footer{
-        display: block;
+    header, form, footer{
         max-width: 768px;
         margin: auto;
+    }
+
+
+
+    #contact > input, select{
+        width: 70%;
+        float: right;
+    }
+
+    #contact > label{
+        float: left;
+        clear: both;
+        padding-top: 20px;
+    }
+
+    #contact > #zip{
+        width: 25%;
+        float: left;
+        margin-left: 165px;
     }
 
 
