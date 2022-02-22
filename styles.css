@@ -51,7 +51,7 @@ input[type="checkbox"], input[type="radio"]{
 }
 
 #zip{
-    width: 25%;
+    width: 50%;
     padding: 15px 5px 15px 5px;
 }
 
@@ -92,10 +92,11 @@ fieldset{
     margin-top: 2px;
 }
 
-input:focus,textarea:focus{
+input:focus,textarea:focus, select:focus{
     outline: 2px solid #2d3945;
 
 }
+
 
 
 
@@ -107,24 +108,33 @@ input:focus,textarea:focus{
         margin: auto;
     }
 
+    fieldset {
+        display: flex;
+        flex-direction: column;
+      
+        }
 
+    #contact > div{
+        display: flex;
+        flex-grow: 2;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-    #contact > input, select{
+    input, select {
         width: 70%;
-        float: right;
     }
 
-    #contact > label{
-        float: left;
-        clear: both;
-        padding-top: 20px;
-    }
-
-    #contact > #zip{
+    #zip{
         width: 25%;
-        float: left;
-        margin-left: 165px;
     }
 
+    label{
+        text-align: center;
+    }
+
+    #signup {
+        width: 100%;
+    }
 
 }
